@@ -1,0 +1,104 @@
+{
+  "strict": {},
+  "components": {
+    "CustomButton": {
+      "meta":{
+        "parameters": {
+          "borderColor": {
+            "type": "string"
+          },
+          "borderWidth": {
+            "type": "number"
+          },
+          "backgroundColor": {
+            "type": "string"
+          }
+        },
+        "appearances": {
+          "filled": {
+            "default": true
+          },
+          "outline": {
+            "default": false
+          }
+        },
+        "variantGroups":{
+          "status": {
+            "basic": {
+              "default": true
+            },
+            "danger": {
+              "default": false
+            }
+          }
+        },
+        "states": {
+          "focused": {
+            "default": false,
+            "priority": 0,
+            "scope": "all"
+          }
+        }
+      },
+
+      "appearances": {
+
+        "filled": {
+          "mapping": {},
+          "variantGroups": {
+            "status": {
+              "basic": {
+                "borderColor": "color-basic-default-border",
+                "backgroundColor": "color-basic-default",
+                "state": {
+                  "focused": {
+                    "borderColor": "color-basic-focus-border",
+                    "backgroundColor": "color-basic-focus"
+                  }
+                }
+              },
+              "danger": {
+                "borderColor": "color-danger-default-border",
+                "backgroundColor": "color-danger-default",
+                "state": {
+                  "focused": {
+                    "borderColor": "color-danger-focus-border",
+                    "backgroundColor": "color-danger-focus"
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "outline": {
+          "mapping": {},
+          "variantGroups": {
+            "status":{
+              "basic": {
+                "borderColor": "color-basic-transparent-default-border",
+                "backgroundColor": "color-basic-transparent-default",
+                "state": {
+                  "focused": {
+                    "borderColor": "color-basic-transparent-focus-border",
+                    "backgroundColor": "color-basic-transparent-focus"
+                  }
+                }
+              },
+              "danger": {
+                "borderColor": "color-danger-transparent-default-border",
+                "backgroundColor": "color-danger-transparent-default",
+                "state": {
+                  "focused": {
+                    "borderColor": "color-danger-transparent-focus-border",
+                    "backgroundColor": "color-danger-transparent-focus"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
